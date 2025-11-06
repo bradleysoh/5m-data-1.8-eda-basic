@@ -38,7 +38,7 @@ df = pd.DataFrame({'A': [2, 1, 2], 'B': [2, 3, 1], 'C': [1, 2, 3]})
 Answer:
 
 ```python
-df.sort_values(['A'])
+df.sort_values(['A','B'])
 #I am not sure what the question is asking – how does the question want the data to be sorted, i.e. ascending or descending order? I am aware I am only sorting column A in ascending order, but because of the data, the output generated shows that column B is already sorted in descending order.
 ```
 
@@ -56,8 +56,7 @@ df2 = pd.DataFrame({'A': [7, 8, 9], 'B': [10, 11, 12]})
 Answer:
 
 ```python
-pd.concat([df1, df2], axis=0)
-#I am not sure if the index matters here. I kept it as it is because the question did not specify whether the index should be reordered or kept.
+pd.concat([df1, df2], axis=0, ignore_index=True)
 ```
 
 ### Question 4
