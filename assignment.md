@@ -39,7 +39,7 @@ Answer:
 
 ```python
 df.sort_values(['A','B'])
-#I am not sure what the question is asking – how does the question want the data to be sorted, i.e. ascending or descending order? I am aware I am only sorting column A in ascending order, but because of the data, the output generated shows that column B is already sorted in descending order.
+#assuming that both columns are to be arranged in ascending order
 ```
 
 ### Question 3
@@ -57,6 +57,7 @@ Answer:
 
 ```python
 pd.concat([df1, df2], axis=0, ignore_index=True)
+#ignoring index so that the index of the concatenated DataFrame will run in numerical order
 ```
 
 ### Question 4
